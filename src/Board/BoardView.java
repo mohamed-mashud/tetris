@@ -43,10 +43,10 @@ public class BoardView {
     }
 
     private void resetBoard() {
-//        System.out.println("Enter the number of Rows : ");
-//        int rowSize = InputHandler.getIntegerInput();
-//        System.out.println("Enter the number of Columns : ");
-//        int columnSize = InputHandler.getIntegerInput();
+        // System.out.println("Enter the number of Rows : ");
+        // int rowSize = InputHandler.getIntegerInput();
+        // System.out.println("Enter the number of Columns : ");
+        // int columnSize = InputHandler.getIntegerInput();
         boardModel.resetBoard(15, 10);
     }
 
@@ -65,11 +65,11 @@ public class BoardView {
     }
 
     private void initBoard() {
-//        System.out.println("Enter the number of Rows : ");
-//        int rowSize = InputHandler.getIntegerInput();
-//        System.out.println("Enter the number of Columns : ");
-//        int columnSize = InputHandler.getIntegerInput();
+        // System.out.println("Enter the number of Rows : ");
+        // int rowSize = InputHandler.getIntegerInput();
+        // System.out.println("Enter the number of Columns : ");
+        // int columnSize = InputHandler.getIntegerInput();
 
-        boardModel.initBoard(15,10);
+        boardModel.initBoard(15, 10);
     }
 }

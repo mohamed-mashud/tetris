@@ -1,4 +1,5 @@
 package utils;
+
 import DTO.*;
 
 public class BlockUtils {
@@ -24,12 +25,19 @@ public class BlockUtils {
             case 'T':
                 resultBlock = tBlock(block);
                 break;
+            case 'X':
+                resultBlock = xBlock(block);
+                break;
             default:
                 System.out.println("Invalid Block");
                 break;
         }
 
         return resultBlock;
+    }
+
+    private static char[][] xBlock(String block) {
+        return XBlock.getBlock(getBlockNumber(block));
     }
 
     private static char[][] sBlock(String block) {
@@ -39,6 +47,7 @@ public class BlockUtils {
     private static char[][] tBlock(String block) {
         return TBlock.getBlock(getBlockNumber(block));
     }
+
     private static char[][] iBlock(String block) {
         return IBlock.getBlock(getBlockNumber(block));
     }
